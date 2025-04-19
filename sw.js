@@ -1,16 +1,16 @@
 const CACHE_NAME = "card-v1"; // Название кэша (можно менять при обновлениях)
 
 const FILES = [ // Файлы, которые будут сохранены в кэш при установке
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/app.js",
-  "/manifest.json",
-  "/offline.html",
-  "/images/photo.png",
-  "/images/2025041909058.png",
-  "/icons/android-launchericon-192-192.png",
-  "/icons/android-launchericon-512-512.png"
+  "/PWA_Galimova/",
+  "/PWA_Galimova/index.html",
+  "/PWA_Galimova/styles.css",
+  "/PWA_Galimova/app.js",
+  "/PWA_Galimova/manifest.json",
+  "/PWA_Galimova/offline.html",
+  "/PWA_Galimova/images/photo.png",
+  "/PWA_Galimova/images/2025041909058.png",
+  "/PWA_Galimova/icons/android-launchericon-192-192.png",
+  "/PWA_Galimova/icons/android-launchericon-512-512.png"
 ];
 
 // Установка сервис-воркера
