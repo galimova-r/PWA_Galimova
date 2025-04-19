@@ -7,10 +7,10 @@ const FILES = [ // Файлы, которые будут сохранены в �
   "/app.js",
   "/manifest.json",
   "/offline.html",
-  "/images/photo.jpg",
-  "/images/qrcode.png",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png"
+  "/images/photo.png",
+  "/images/2025041909058.png",
+  "/icons/android-launchericon-192-192.png",
+  "/icons/android-launchericon-512-512.png"
 ];
 
 // Установка сервис-воркера
