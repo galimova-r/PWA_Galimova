@@ -4,7 +4,7 @@ const FILES = [ // Файлы, которые будут сохранены в �
   "/PWA_Galimova/",
   "/PWA_Galimova/index.html",
   "/PWA_Galimova/styles.css",
-  "/PWA_Galimova/app.js",
+  "/PWA_Galimova/App.js",
   "/PWA_Galimova/manifest.json",
   "/PWA_Galimova/offline.html",
   "/PWA_Galimova/images/photo.png",
