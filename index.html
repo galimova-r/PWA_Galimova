@@ -1,41 +1,49 @@
-<!DOCTYPE html> <!-- Объявляем тип документа -->
-<html lang="ru"> <!-- Указываем язык страницы -->
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8"> <!-- Кодировка -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность -->
-  <title>Моя визитка</title> <!-- Заголовок страницы -->
-  <link rel="manifest" href="/PWA_Galimova/manifest.json"> <!-- Подключаем манифест -->
-  <link rel="stylesheet" href="/PWA_Galimova/styles.css"> <!-- Подключаем стили -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя визитка</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card"> <!-- Основной контейнер визитки -->
-    <img src="images/photo.png" alt="Фото" class="photo"> <!-- Фото пользователя -->
-    <h1>Рената Галимова</h1> <!-- Имя -->
-    <p>Студент</p> <!-- Профессия -->
+  <div class="card">
+    <img src="images/photo.png" alt="Фото" class="photo">
+    <h1>Рената Галимова</h1>
+    <p>Студент</p>
     <div class="contacts">
-        <!-- Блок email -->
-        <div class="contact-block">
-            <a href="mailto:ivan@example.com">215865@example.com</a>
-            <h3>QR-код:</h3>
-            <img src="images/2025041909058.png" alt="QR" class="qr">
+      <!-- Блок email -->
+      <div class="contact-block">
+        <a href="mailto:215865@example.com">215865@example.com</a>
+        <button class="show-qr-btn" data-qr="images/2025041909058.png">Показать QR-код</button>
+        <div class="qr-container" style="display: none;">
+          <h3>QR-код:</h3>
+          <img src="" alt="QR" class="qr">
         </div>
+      </div>
 
-        <!-- Блок Telegram -->
-        <div class="contact-block">
-            <a href="https://t.me/telegram" target="_blank">Не мой Telegram</a>
-            <h3>QR-код:</h3>
-            <img src="images/2025041909058.png" alt="QR" class="qr">
+      <!-- Блок Telegram -->
+      <div class="contact-block">
+        <a href="https://t.me/telegram" target="_blank">Не мой Telegram</a>
+        <button class="show-qr-btn" data-qr="images/2025041909058.png">Показать QR-код</button>
+        <div class="qr-container" style="display: none;">
+          <h3>QR-код:</h3>
+          <img src="" alt="QR" class="qr">
         </div>
+      </div>
 
-        <!-- Блок GitHub -->
-        <div class="contact-block">
-            <a href="https://github.com/galimova-r" target="_blank">Мой GitHub</a>
-            <h3>QR-код:</h3>
-            <img src="images/2025041909058.png" alt="QR" class="qr">
+      <!-- Блок GitHub -->
+      <div class="contact-block">
+        <a href="https://github.com/galimova-r" target="_blank">Мой GitHub</a>
+        <button class="show-qr-btn" data-qr="images/2025041909058.png">Показать QR-код</button>
+        <div class="qr-container" style="display: none;">
+          <h3>QR-код:</h3>
+          <img src="" alt="QR" class="qr">
         </div>
+      </div>
     </div>
-    
   </div>
-  <script src="/PWA_Galimova/App.js"></script> <!-- Скрипт подключения Service Worker -->
+  <script src="app.js"></script>
 </body>
 </html>
