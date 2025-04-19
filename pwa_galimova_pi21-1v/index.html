@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Объявляем тип документа -->
+<html lang="ru"> <!-- Указываем язык страницы -->
+<head>
+  <meta charset="UTF-8"> <!-- Кодировка -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность -->
+  <title>Моя визитка</title> <!-- Заголовок страницы -->
+  <link rel="manifest" href="manifest.json"> <!-- Подключаем манифест -->
+  <link rel="stylesheet" href="styles.css"> <!-- Подключаем стили -->
+</head>
+<body>
+  <div class="card"> <!-- Основной контейнер визитки -->
+    <img src="images/photo.png" alt="Фото" class="photo"> <!-- Фото пользователя -->
+    <h1>Рената Галимова</h1> <!-- Имя -->
+    <p>Студент</p> <!-- Профессия -->
+    <div class="contacts">
+        <!-- Блок email -->
+        <div class="contact-block">
+            <a href="mailto:ivan@example.com">215865@example.com</a>
+            <h3>QR-код:</h3>
+            <img src="images/2025041909058.png" alt="QR" class="qr">
+        </div>
+
+        <!-- Блок Telegram -->
+        <div class="contact-block">
+            <a href="https://t.me/telegram" target="_blank">Не мой Telegram</a>
+            <h3>QR-код:</h3>
+            <img src="images/2025041909058.png" alt="QR" class="qr">
+        </div>
+
+        <!-- Блок GitHub -->
+        <div class="contact-block">
+            <a href="https://github.com/galimova-r" target="_blank">Мой GitHub</a>
+            <h3>QR-код:</h3>
+            <img src="images/2025041909058.png" alt="QR" class="qr">
+        </div>
+    </div>
+    
+  </div>
+  <script src="app.js"></script> <!-- Скрипт подключения Service Worker -->
+</body>
+</html>
