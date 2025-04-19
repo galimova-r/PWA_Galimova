@@ -1,65 +1,73 @@
 body {
-  font-family: sans-serif;         /* Шрифт */
-  background: #fafafa;             /* Цвет фона */
-  text-align: center;              /* Центровка контента */
-  padding: 2em;                    /* Отступ вокруг */
+  font-family: sans-serif;
+  background: #fafafa;
+  text-align: center;
+  padding: 2em;
 }
 .card {
-  background: white;              /* Фон визитки */
-  padding: 2em;                   /* Внутренние отступы */
-  border-radius: 12px;            /* Скругление углов */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Тень */
+  background: white;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   max-width: 400px;
-  margin: 0 auto;                 /* Центровка по ширине */
+  margin: 0 auto;
 }
 .photo {
-  width: 150px;                   /* Размер фото */
-
+  width: 150px;
+  border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-.contacts a {
-    color: #1565c0; /* Цвет ссылок */
-    text-decoration: none;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
-.contacts a:hover {
-  text-decoration: underline;     /* Подчёркивание при наведении */
+.contact-block {
+  padding: 1.2em;
+  border-radius: 8px;
+  background: #f5f9ff;
+  border-left: 4px solid #1565c0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-block:nth-child(2) {
+  background: #fff5f5;
+  border-left-color: #c62828;
+}
+.contact-block:nth-child(3) {
+  background: #f5fff5;
+  border-left-color: #2e7d32;
+}
+.contact-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .qr {
-  width: 120px;                   /* Размер QR-кода */
+  width: 120px;
   margin-top: 1em;
 }
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
+.show-qr-btn {
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
-
-.contact-block {
-    padding: 1.2em;
-    border-radius: 8px;
-    background: #f5f9ff;
-    border-left: 4px solid #1565c0;
-    transition: transform 0.2s, box-shadow 0.2s;
+.contact-block:nth-child(2) .show-qr-btn {
+  background: #c62828;
 }
-
-    .contact-block:nth-child(2) {
-        background: #fff5f5;
-        border-left-color: #c62828;
-    }
-
-    .contact-block:nth-child(3) {
-        background: #f5fff5;
-        border-left-color: #2e7d32;
-    }
-
-    .contact-block:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .contact-block h3 {
-        margin: 0.8em 0 0.5em;
-        color: #555;
-    }
-
+.contact-block:nth-child(3) .show-qr-btn {
+  background: #2e7d32;
+}
+.show-qr-btn:hover {
+  opacity: 0.9;
+}
+.qr-container {
+  margin-top: 1em;
+}
+.qr-container h3 {
+  margin: 0.8em 0 0.5em;
+  color: #555;
+}
